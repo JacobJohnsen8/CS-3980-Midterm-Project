@@ -1,0 +1,129 @@
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #67a0cc;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Title banner */
+.title-banner {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title-banner h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+}
+
+/* Section headers */
+h2 {
+    text-align: center;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs */
+input, select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5566d1;
+}
+
+/* Load button spacing */
+#loadMoviesBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Movie card display */
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #85c5f7;
+    transition: transform 0.2s;
+}
+
+/* Small hover animation */
+.movie-card:hover {
+    transform: scale(1.02);
+}
+
+/* Text inside movie cards */
+.movie-card p {
+    margin: 6px 0;
+}
+
+/* Edit and delete buttons */
+.edit-btn,
+.delete-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 12px;
+}
+
+.rank-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #4facfe;
+    color: white;
+}
+
+.gold {
+    background-color: gold;
+    color: black;
+}
+
+.silver {
+    background-color: silver;
+    color: black;
+}
+
+.bronze {
+    background-color: #cd7f32;
+    color: white;
+}
+
+.movie-card:first-child {
+    border: 2px solid gold;
+}

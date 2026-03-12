@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="title-banner">
+            <h1>🎬 Movie Watchlist</h1>
+        </div>
+
+        <h2>Your Movies</h2>
+        <div id="movieList"></div>
+
+        <h2 id="formTitle">Add a Movie</h2>
+            <form id="movieForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" required>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" required>
+
+                <label for="watched">Watched:</label>
+                <select id="watched" required>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" step="0.1" min="0" max="10" required>
+
+                <button type="submit" id="submitBtn">Add Movie</button>
+                <button type="button" id="cancelEditBtn" style="display:none;">Cancel Edit</button>
+            </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
